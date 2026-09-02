@@ -26,7 +26,7 @@ if command -v python3 >/dev/null; then ok "python3 on PATH ($(python3 -V 2>&1))"
 deac_load_cpu 2>/dev/null || info "module load reported an error, continuing"
 
 if python3 -c "import numpy" 2>/dev/null; then ok "numpy importable"; else bad "numpy importable"; fi
-if python3 smoke_test.py; then ok "smoke_test.py passed"; else bad "smoke_test.py passed"; fi
+if python3 test.py; then ok "test.py passed"; else bad "test.py passed"; fi
 
 for tool in sbatch sacct sinfo scontrol; do
   if command -v $tool >/dev/null; then ok "$tool on PATH"; else bad "$tool on PATH"; fi
