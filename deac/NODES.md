@@ -32,7 +32,8 @@ should say so in your report rather than guessing.
 | fp32 peak (TFLOP/s) | UNCONFIRMED | vendor spec sheet |
 | Tensor-core peak, tf32 or fp16 (TFLOP/s) | UNCONFIRMED | vendor spec sheet |
 | HBM bandwidth (GB/s) | UNCONFIRMED | vendor spec sheet |
-| CUDA driver and runtime version | UNCONFIRMED | `nvidia-smi`, `nvcc --version` |
+| CUDA toolkit | 12.8.1, module `nvidia/cuda12/cuda/12.8.1` (12.4.1 also installed) | `nvcc --version` |
+| CUDA driver version | UNCONFIRMED, needs `nvidia-smi` inside a GPU job | `nvidia-smi` |
 
 ## Interconnect
 

@@ -58,8 +58,10 @@ deac_load_mpi() {
 
 deac_load_gpu() {
   deac_load_cpu
-  # UNCONFIRMED. Replace with the DEAC CUDA module.
-  module load cuda 2>/dev/null || true
+  # Confirmed on DEAC (artemis) on 2026-09-02. DEAC also carries 12.4.1 under
+  # the same prefix. Keep 12.8.1, because it matches the CI toolkit and the
+  # PyTorch cu128 wheel.
+  module load nvidia/cuda12/cuda/12.8.1
 }
 
 # --------------------------------------------------------------- sbatch args
