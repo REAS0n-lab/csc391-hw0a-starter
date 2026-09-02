@@ -1,0 +1,35 @@
+# Offline checks for the HW0a starter.
+#
+# These run on GitHub's runners, which have no cluster, no MPI, and no GPU.
+# They confirm that the harness computes what it claims and that the smoke
+# test passes. They confirm nothing about performance and nothing about DEAC.
+#
+# Every check here is worth zero points. The rubric rewards models,
+# measurements, explanation, reproducibility, and limits, and none of that is
+# machine checkable. A green run is not a grade.
+
+name: tests
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  offline:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: python -m pip install --upgrade pip && pip install -r env/requirements.txt
+
+      - name: Smoke test
+        run: python smoke_test.py
+
+      - name: Unit tests
+        run: python -m pytest tests -q
