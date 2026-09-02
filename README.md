@@ -25,16 +25,17 @@ results/              job output lands here and is not committed
 
 ## Setup
 
-Make your own copy of this repository, then clone it onto DEAC and build the
-environment once. The Canvas post has the exact command with the organization
-name filled in.
+Make your own copy of this repository under the REASOn Lab organization, then
+clone it onto DEAC and build the environment once. The organization login on
+GitHub is spelled with a zero, REAS0n-lab, and the Canvas post has the same
+command.
 
 ```bash
-gh repo create ORG/csc391-hw0a-YOUR-GITHUB-HANDLE \
-  --template ORG/csc391-hw0a-starter --private
+gh repo create REAS0n-lab/csc391-hw0a-YOUR-GITHUB-HANDLE \
+  --template REAS0n-lab/csc391-hw0a-starter --private
 
 ssh <you>@deac                      # then, on the cluster
-git clone https://github.com/ORG/csc391-hw0a-YOUR-GITHUB-HANDLE.git
+git clone https://github.com/REAS0n-lab/csc391-hw0a-YOUR-GITHUB-HANDLE.git
 cd csc391-hw0a-YOUR-GITHUB-HANDLE
 ./env/setup.sh
 ```
