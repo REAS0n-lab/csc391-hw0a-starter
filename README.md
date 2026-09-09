@@ -7,7 +7,7 @@ a Slurm script that runs it on a DEAC compute node.
 You should be editing two lines in one file. If you find yourself writing lines and lines of code in the
 benchmark, stop and reread this page.
 
-**Assigned 9/2. Due at the start of class Wednesday 9/9.**
+**Assigned 9/2. Due at the start of class on 9/11.**
 
 ## Layout
 
