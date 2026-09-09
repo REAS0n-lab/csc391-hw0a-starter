@@ -108,7 +108,7 @@ it claims to. They do not check anything about performance.
 
 ## If you cannot log in
 
-Email the instructor by 5pm Friday 9/4. Account
+Email the instructor by 5pm Friday 9/9. Account
 provisioning has a lead time and the DEAC session on 9/9 is intended to troubleshoot,
 so the more of this you have already attempted the more
 useful meeting with the HPC team will be.
